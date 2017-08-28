@@ -7,6 +7,48 @@
     <title>Canvas Explore</title>
 </head>
 <body>
-    
+    <h1>HTML Graphics</h1>
+    <h2>My First SVG</h2>
+    <SVG width="200px" height="200px">
+        <circle cx="0" cy="0" r="40" stroke="green" stroke-width="2" fill="red" ></circle>
+        <circle cx="200" cy="0" r="40" stroke="green" stroke-width="2" fill="red" ></circle>
+        <circle cx="200" cy="200" r="40" stroke="green" stroke-width="2" fill="red" ></circle>
+        <circle cx="0" cy="200" r="40" stroke="green" stroke-width="2" fill="red" ></circle>
+        <circle cx="100" cy="100" r="50" stroke="blue" stroke-width="2" fill="yellow"></circle>
+    </SVG>
+    <hr>
+    <h2>Draw a Teddy Bear</h2>
+    <SVG width="400" height="650">
+        <rect x="0" y="0" width="400" height="650" style="fill:rgb(192,192,192); stroke:rgb(169,169,169); stroke-width:3"></rect>
+        /* Body */
+        <ellipse cx="200" cy="380" rx="120" ry="150" style="fill:rgb(55,45,65); stroke:rgb(55,45,65); stroke-width:1"></ellipse>
+        /* Hand Left */
+        <ellipse cx="120" cy="360" rx="30" ry="70" style="fill:rgb(70,60,80)" transform="rotate(110,120,330)"></ellipse>
+        <circle cx="155" cy="340" r="50" fill="rgb(55,45,65)"></circle>
+        /* Left Paw */
+        <circle cx="51" cy="304" r="18" fill="white"></circle>
+
+        /* Right Hand */
+        <ellipse cx="280" cy="360" rx="30" ry="70" style="fill:rgb(70,60,80)" transform="rotate(-110,280,330)"></ellipse>
+        <circle cx="245" cy="340" r="50" fill="rgb(55,45,65)"></circle>
+        /* Right Paw */
+        <circle cx="349" cy="304" r="18" fill="white"></circle>
+
+        /* Left Leg */
+        <ellipse cx="150" cy="540" rx="40" ry="80" style="fill:rgb(70,60,80)" transform="rotate(20,150,510)"></ellipse>
+        <circle cx="190" cy="430" r="80" fill="rgb(55,45,65)"></circle>
+
+        /* Right Leg */
+        <ellipse cx="250" cy="540" rx="40" ry="80" style="fill:rgb(70,60,80)" transform="rotate(-20,250,510)"></ellipse>
+        <circle cx="210" cy="430" r="80" fill="rgb(55,45,65)"></circle>
+
+        /* Tummy Button */
+        <circle cx="200" cy="450" r="7" fill="rgb(90,80,100)" stroke="rgb(45,35,55)" stroke-width="2"></circle>
+        <circle cx="201" cy="451" r="2" fill="rgb(45,35,55)"></circle>
+
+        /* Head */
+        <circle cx="200" cy="200" r="100" fill="rgb(50,40,60)"></circle>
+        
+    </SVG>
 </body>
 </html>
