@@ -1,0 +1,58 @@
+#move1 {
+    transform-origin: 70px 107px;
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+   
+    
+}
+
+#move1:hover {
+    /* -webkit-transform-origin: top left;
+            transform-origin: top right; */
+            transform-origin: 70px 107px;
+            transform: rotate(45deg);
+}
+
+#move1:active {
+    transform: rotate(-90deg);
+
+}
+
+#square {
+    transform-origin: 30px 30px;
+    transition: transform 500ms;
+    
+}
+#square:hover {
+    transform-origin: 30px 30px;
+    /* transform: translate(50px); */
+    transform: rotate(85deg);
+}
+#square:active {
+    transform-origin: 30px 30px;
+    /* transform: translate(50px); */
+    transform: rotate(85deg);
+}
+
+#missile {
+    transition: transform 2s;
+}
+#missile:active {
+    transform: translate(500px);
+}
+
+#missile:active #fire {
+    transform: translate(-20px); 
+    fill: rgba(255,150,0,1);
+}
+
+#fire {
+    transition: transform 500ms;
+    transform: translate(0px); 
+}
+#fire:active {
+    transform: translate(-30px); 
+    fill: rgba(255,150,0,1);
+}
+
+
