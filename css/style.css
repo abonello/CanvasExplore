@@ -1,57 +1,72 @@
 #move1 {
+    -webkit-transform-origin: 70px 107px;
     transform-origin: 70px 107px;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
     transition: transform 500ms;
-    -webkit-transition: transform 500ms;
-   
-    
+    transition: transform 500ms, -webkit-transform 500ms;
 }
 
 #move1:hover {
-    /* -webkit-transform-origin: top left;
-            transform-origin: top right; */
-            transform-origin: 70px 107px;
+    -webkit-transform-origin: 70px 107px;
+    transform-origin: 70px 107px;
+    -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 }
 
 #move1:active {
-    transform: rotate(-90deg);
-
+    -webkit-transform: rotate(-90deg);    transform: rotate(-90deg);
 }
 
 #square {
+    -webkit-transform-origin: 30px 30px;
     transform-origin: 30px 30px;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
     transition: transform 500ms;
-    
+    transition: transform 500ms, -webkit-transform 500ms;
 }
 #square:hover {
+    -webkit-transform-origin: 30px 30px;
     transform-origin: 30px 30px;
-    /* transform: translate(50px); */
-    transform: rotate(85deg);
+    -webkit-transform: rotate(85deg);
+            transform: rotate(85deg);
 }
 #square:active {
+    -webkit-transform-origin: 30px 30px;
     transform-origin: 30px 30px;
-    /* transform: translate(50px); */
-    transform: rotate(85deg);
+    -webkit-transform: rotate(85deg);
+            transform: rotate(85deg);
 }
 
 #missile {
+    -webkit-transition: -webkit-transform 2s;
+    transition: -webkit-transform 2s;
     transition: transform 2s;
+    transition: transform 2s, -webkit-transform 2s;
 }
 #missile:active {
-    transform: translate(500px);
+    -webkit-transform: translate(500px);
+            transform: translate(500px);
 }
 
 #missile:active #fire {
-    transform: translate(-20px); 
+    -webkit-transform: translate(-20px);
+            transform: translate(-20px); 
     fill: rgba(255,150,0,1);
 }
 
 #fire {
+    -webkit-transition: -webkit-transform 500ms;
+    transition: -webkit-transform 500ms;
     transition: transform 500ms;
-    transform: translate(0px); 
+    transition: transform 500ms, -webkit-transform 500ms;
+    -webkit-transform: translate(0px);
+            transform: translate(0px); 
 }
 #fire:active {
-    transform: translate(-30px); 
+    -webkit-transform: translate(-30px);
+            transform: translate(-30px); 
     fill: rgba(255,150,0,1);
 }
 
